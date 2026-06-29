@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:pages": "cross-env GITHUB_ACTIONS=true GITHUB_REPOSITORY=wzddddddddd/wzd_resource_web next build",
     "start": "next start",
     "lint": "eslint . --max-warnings=0",
     "test": "vitest run",
@@ -23,6 +24,7 @@
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
     "baseline-browser-mapping": "^2.10.40",
+    "cross-env": "10.0.0",
     "eslint": "9.37.0",
     "eslint-config-next": "16.0.1",
     "jsdom": "27.0.1",

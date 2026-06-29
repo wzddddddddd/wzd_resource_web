@@ -104,11 +104,13 @@ public/
 推荐流程：
 
 1. 把项目推到 GitHub
-2. 在 GitHub 仓库的 `Settings > Pages` 中确认使用 `GitHub Actions`
-3. 推送到 `main` 后，工作流会自动测试、构建并发布静态站点
-4. 部署完成后通过 GitHub Pages 地址访问
+2. 运行 `npm run build:pages`
+3. 将生成的 `out/` 内容同步到仓库的 `docs/`
+4. 在 GitHub 仓库的 `Settings > Pages` 中选择 `Deploy from a branch`
+5. 选择 `main` 分支和 `/docs` 目录
+6. 保存后通过 GitHub Pages 地址访问
 
 如果仓库名是 `username.github.io`，站点会直接部署在根路径。
 如果仓库名是普通项目仓库，例如 `personal-resume-resources-site`，项目会自动使用对应仓库名作为路径前缀。
 
-这个项目已经通过 `npm test`、`npm run lint` 和 `npm run build` 验证，可以直接用于 GitHub Pages 自动部署。
+这个项目已经通过 `npm test`、`npm run lint` 和 `npm run build` 验证，并额外提供了 `npm run build:pages` 用于 GitHub Pages 的项目路径构建。
