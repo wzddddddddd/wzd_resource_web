@@ -8,11 +8,11 @@ export const navigationItems: NavigationItem[] = [
 ];
 
 export const homeContent: HomeContent = {
-  availability: "个人站点 / 简历与精选资源",
-  title: "用克制的排版，呈现真正重要的能力与作品。",
-  intro: "你好，我正在把个人经历、核心简历和长期整理的高质量资源放进一个清爽、易访问的空间里。",
+  availability: "嵌入式软件工程师求职 / 简历与项目资源",
+  title: "聚焦嵌入式软件、RTOS 与图形界面开发。",
+  intro: "你好，我是吴钟锭，河南理工大学自动化本科生，正在寻找嵌入式软件工程师岗位机会。",
   description:
-    "这个网站基于配置驱动结构搭建，后续可以持续追加新页面和新资源，而不需要改动核心布局。它既是对外展示窗口，也是一个可扩展的内容入口。",
+    "我有 STM32、ESP32-S3、CH32 开发经验，熟悉 FreeRTOS、LVGL、常用外设驱动与软硬件联调，也做过基于 ESP32-S3 的 LVGL 触控手表毕业设计。",
   primaryLinks: [
     { label: "查看资源", href: "/resources", variant: "primary" },
     { label: "了解更多", href: "/about", variant: "secondary" },
@@ -20,19 +20,19 @@ export const homeContent: HomeContent = {
   ],
   highlights: [
     {
-      eyebrow: "简历概览",
-      title: "聚焦关键经历与优势",
-      description: "首页只保留最有说服力的信息密度，让访客更快理解你是谁、你能做什么。",
+      eyebrow: "实习经历",
+      title: "两段嵌入式软件实习",
+      description: "在合肥磐研电子和深圳光速时代参与嵌入式代码编写、板级焊接、软硬件联调与 Git 协作开发。",
     },
     {
-      eyebrow: "资源体系",
-      title: "站内下载与外链并存",
-      description: "资源页通过统一数据结构渲染，既能放文件，也能放网盘、案例集或工具入口。",
+      eyebrow: "技术栈",
+      title: "熟悉 MCU、RTOS 与 GUI",
+      description: "覆盖 STM32、ESP32-S3、CH32、FreeRTOS、LVGL，以及 Keil、CubeMX、VS Code、GitLab 等常用工具链。",
     },
     {
-      eyebrow: "持续扩展",
-      title: "页面可按模板追加",
-      description: "后续新增关于页、项目页、联系页时，可以复用同一套页面模板与导航配置。",
+      eyebrow: "项目经历",
+      title: "做过完整毕业设计项目",
+      description: "独立完成 ESP32-S3 触控手表项目，包含 UI、文件系统、媒体显示、时间同步、升级与低功耗方案。",
     },
   ],
 };
@@ -41,15 +41,19 @@ export const standardPages: StandardPage[] = [
   {
     slug: "about",
     title: "关于我",
-    intro: "这里预留给更完整的背景介绍、工作方式、项目理念或你想补充的长期价值主张。",
+    intro: "我目前就读于河南理工大学自动化专业，求职方向是嵌入式软件工程师，关注 MCU 开发、RTOS、图形界面与设备联调。",
     sections: [
       {
-        title: "工作方式",
-        body: "我偏好把复杂问题拆成清晰模块，先梳理结构，再补充视觉和细节，从而让内容长期可维护。",
+        title: "教育与方向",
+        body: "本科阶段主修 C 语言、嵌入式基础、电路分析、模电、数电和自动控制原理，希望在嵌入式软件方向持续深入发展。",
       },
       {
-        title: "内容策略",
-        body: "这个页面模板适合放个人经历、项目方法论、合作方式等相对稳定的内容，后续只需改配置即可扩展。",
+        title: "技能与实践",
+        body: "我熟悉 C 语言、常见数据结构、指针与回调，了解 STM32 标准库与 HAL，能进行外设驱动、任务调度、界面开发、焊接调试和基础硬件联调。",
+      },
+      {
+        title: "项目与协作",
+        body: "我做过 ESP32-S3 触控手表毕业设计，也参与过 HX3506 运动相机 UI Bug 修复，能结合 Git、测试复现、样机验证和 AI 辅助工具一起推进问题解决。",
       },
     ],
   },

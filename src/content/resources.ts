@@ -2,8 +2,8 @@ import type { ResourceItem } from "@/types/content";
 
 export const resources: ResourceItem[] = [
   {
-    title: "个人简历 PDF",
-    description: "适合快速查看和下载的简历版本，适用于投递或转发。",
+    title: "吴钟锭 - 嵌入式软件简历",
+    description: "当前最新的个人简历 PDF，适用于查看、转发和投递嵌入式软件岗位。",
     type: "download",
     url: "/downloads/resume.pdf",
     category: "简历",
@@ -11,17 +11,17 @@ export const resources: ResourceItem[] = [
     tag: "PDF",
   },
   {
-    title: "产品设计资料包",
-    description: "一个站内下载示例，后续可以替换成你的压缩包、案例合集或资料包。",
-    type: "download",
-    url: "/downloads/design-kit.pdf",
-    category: "下载资源",
+    title: "ESP32S3 触控手表项目源码",
+    description: "毕业设计项目源码仓库，包含 LVGL 界面、SD 卡文件访问、媒体显示、时间同步与升级相关实现。",
+    type: "external",
+    url: "https://github.com/wzddddddddd/ESP32S3_watch_LVGL_WZD.git",
+    category: "项目链接",
     order: 2,
-    tag: "下载",
+    tag: "GitHub",
   },
   {
-    title: "灵感参考库",
-    description: "一个外部链接示例，适合放网盘、飞书文档、Notion 集合或精选链接页。",
+    title: "资源页占位示例",
+    description: "这里保留一个外链示例位，后续你给我更多网盘、文档或项目链接时，可以继续往这里追加。",
     type: "external",
     url: "https://example.com/resources",
     category: "外部链接",
