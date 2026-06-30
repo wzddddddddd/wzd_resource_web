@@ -130,7 +130,7 @@ a {
 .heroSection {
   min-height: 420px;
   display: grid;
-  align-items: end;
+  align-items: stretch;
 }
 
 .heroCopy h1,
@@ -146,8 +146,21 @@ a {
 }
 
 .heroCopy h1 {
-  max-width: 11ch;
-  font-size: clamp(2.8rem, 6vw, 5.8rem);
+  max-width: 14ch;
+  font-size: clamp(2.1rem, 4.2vw, 3.9rem);
+}
+
+.heroCopy {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(220px, 0.62fr);
+  gap: clamp(24px, 4vw, 48px);
+  align-items: stretch;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .heroIntro,
@@ -162,22 +175,20 @@ a {
   line-height: 1.8;
 }
 
-.heroIntro {
-  max-width: 52rem;
-  margin: 20px 0 8px;
-  font-size: 1.1rem;
-}
-
 .heroDescription {
   max-width: 42rem;
-  margin: 0;
+  margin: 22px 0 0;
+  font-size: 1.12rem;
 }
 
 .heroActions {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-self: center;
+  justify-self: end;
+  width: min(100%, 200px);
   gap: 14px;
-  margin-top: 28px;
+  margin-top: 0;
 }
 
 .primaryButton,
@@ -341,6 +352,11 @@ a {
     font-size: clamp(2.4rem, 12vw, 4rem);
   }
 
+  .heroCopy {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
   .highlightGrid,
   .standardSections,
   .resourceGrid {
@@ -350,6 +366,11 @@ a {
   .heroActions,
   .mainNav {
     width: 100%;
+  }
+
+  .heroActions {
+    justify-self: stretch;
+    align-self: stretch;
   }
 
   .mainNav a,

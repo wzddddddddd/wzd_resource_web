@@ -10,10 +10,11 @@ export function HeroSection({ content }: HeroSectionProps) {
   return (
     <section className="heroSection">
       <div className="heroCopy">
-        <p className="sectionEyebrow">{content.availability}</p>
-        <h1>{content.title}</h1>
-        <p className="heroIntro">{content.intro}</p>
-        <p className="heroDescription">{content.description}</p>
+        <div className="heroText">
+          <p className="sectionEyebrow">{content.availability}</p>
+          <h1>{content.intro}</h1>
+          <p className="heroDescription">{content.description}</p>
+        </div>
         <div className="heroActions">
           {content.primaryLinks.map((link) => (
             <Link
